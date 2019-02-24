@@ -14,7 +14,7 @@ test:
 
 
 docker_build:
-	docker build -t hello-world-printeri .
+	docker build -t hello-world-printer .
 
 docker_run: docker_build
 	docker run \
