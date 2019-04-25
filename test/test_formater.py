@@ -15,4 +15,4 @@ class TestFormater(unittest.TestCase):
         xml = format_to_xml("Ala ma kota", "Ala")
         message = '<greetings><name>Ala</name><msg>' \
                   'Ala ma kota</msg></greetings>'
-        self.assertEqual(xml, message)
+        self.assertEqual(xml.decode("utf-8"), message)
